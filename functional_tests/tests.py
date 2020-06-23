@@ -90,7 +90,7 @@ class NewVisitorTest(LiveServerTestCase):
         self.browser.get(self.live_server_url)
         page_text = self.browser.find_element_by_tag_name('body').text
         self.assertNotIn('Buy peacock feathers', page_text)
-        self.assertNotIn(('make a fly', page_text))
+        self.assertNotIn('make a fly', page_text)
 
         # Francis starts a new list by enter a new item. He
         # is less interesting than Edith
