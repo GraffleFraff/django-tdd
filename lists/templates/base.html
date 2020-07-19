@@ -23,7 +23,7 @@
                     {% if user.email %}
                     <u1 class="nav navbar-nav navbar-right">
                         <li class="navbar-text">Logged in as {{ user.email }}</li>
-                        <li><a href="#">Log out</a></li>
+                        <li><a href="{% url 'logout' %}">Log out</a></li>
                     </u1>
                     {% else %}
                     <form class="navbar-form navbar-right"
