@@ -31,7 +31,6 @@ else:
 
 
 # Application definition
-
 INSTALLED_APPS = [
     #'django.contrib.admin',
     'django.contrib.auth',
@@ -41,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'lists',
     'accounts',
+    'functional_tests',
 ]
 
 AUTH_USER_MODEL = 'accounts.USER'
